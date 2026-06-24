@@ -38,7 +38,7 @@ public_users.get('/isbn/:isbn', function (req, res) {
   return res.status(200).json(books[isbn]);
 });
 
-// Task 11: Get book details based on ISBN using async/await with Axios
+// Task 11: Get book details based on ISBN
 public_users.get('/async/isbn/:isbn', async function (req, res) {
   const isbn = req.params.isbn;
   try {
@@ -60,7 +60,7 @@ public_users.get('/author/:author', function (req, res) {
   return res.status(200).json(booksByAuthor);
 });
 
-// Task 11: Get book details based on Author using async/await with Axios
+// Task 11: Get book details based on Author
 public_users.get('/async/author/:author', async function (req, res) {
   const author = req.params.author;
   try {
@@ -82,7 +82,7 @@ public_users.get('/title/:title', function (req, res) {
   return res.status(200).json(booksByTitle);
 });
 
-// Task 11: Get book details based on Title using async/await with Axios
+// Task 11: Get book details based on Title
 public_users.get('/async/title/:title', async function (req, res) {
   const title = req.params.title;
   try {
